@@ -1,0 +1,11 @@
+<button (click)="getMovies()">movies</button>
+<button (click)="getMovie()">movies:id</button>
+<div class="pelis">
+  <ul>
+    <li *ngFor="let movies of movies">
+      <h1>{{movies.title}}</h1>
+      <h1>{{movies.room}}</h1>
+      <img src="{{movies.poster}}">
+    </li>
+  </ul>
+</div>
